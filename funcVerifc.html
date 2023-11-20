@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificar</title>
+  <link rel="stylesheet" href="css/funcVerific.css">
+  <script src="funcVerific.js" defer></script>
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="verificarContent">
+
+      <div class="topInfo">
+        <button onclick="window.history.back()" style="border: 0px; background-color: transparent; cursor: pointer;"> <img src="assets/voltar.png" alt="" ></button>
+         
+        <img src="assets/FORTES_LOGOMARCA_moldura-e1660776738611 1.png" alt="">
+      </div>
+
+      <div class="idInput">
+        <h1 style="color: #003785; font-size: 20px;  height: 40px; width: 100%;  display: flex; align-items: center; justify-content: center;">Solicite sua refeição:</h1>
+
+        <label for="id" style="color: #003785; font-size: 20px;">Inserir ID:</label>
+
+        <input type="text" id="id" placeholder="71">
+
+         <input id="verificador" class="open-modal" type="submit" value="Solicitar" />
+        
+
+         <dialog>
+            <div class="topInfo">
+               
+            </div> 
+            <div class="tabela">
+                <h1 style="color: #003785; font-size: 20px; display: flex; width: 100%; height: 25px; border-bottom: 1px solid #003785;" >Solicitações ID: 71</h1>
+            <table style="border:0px" >
+            
+                 
+                <tr>
+                  <td >Segunda-Feira</td>
+                  <td><img src="assets/Arrow 3.png" alt=""></td>
+                  <td> <button  class="redButton" >Café</button> <button  class="yellowButton" >Almoço</button> <button  class="yellowButton">Jantar</button></td>
+                </tr>
+                <tr>
+                  <td>Terça-Feira</td>
+                  <td><img src="assets/Arrow 3.png" alt=""></td>
+                  <td> <button  class="yellowButton">Café</button> <button class="yellowButton" >Almoço</button> <button  class="yellowButton">Jantar</button></td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td><img src="assets/Arrow 3.png" alt=""></td>
+                    <td> <button class="redButton" >Café</button> <button class="yellowButton" >Almoço</button> <button class="redButton" >Jantar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>Quinta-Feira</td>
+                    <td><img src="assets/Arrow 3.png" alt=""></td>
+                    <td> <button class="redButton" >Café</button> <button class="redButton" >Almoço</button> <button class="yellowButton" >Jantar</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>Sexta-Feira</td>
+                    <td><img src="assets/Arrow 3.png" alt=""></td>
+                    <td> <button class="yellowButton" >Café</button> <button class="redButton" >Almoço</button> <button class="redButton" >Jantar</button></td>
+                  </tr>
+                  <tr>
+
+                    <td>Sábado</td>
+                    <td><img src="assets/Arrow 3.png" alt=""></td>
+                    <td> <button class="redButton" >Café</button> <button class="yellowButton" >Almoço</button> <button class="redButton" >Jantar</button></td>
+                  </tr>
+              </table>
+             
+
+            </div>
+
+            <div class="selectButtons"> 
+                
+                 <button  id="open" onclick="closeModal3()">Confirmar</button>
+            </div>
+         </dialog>
+
+      </div>
+
+      <div class="bottom">
+        <div class="help">
+          <img src="assets/help.png" alt="">
+          <a href="help.html" style="font-size: 18px; color: #003785 ; ">Fale conosco!</a>
+        </div>
+
+        <div class="exit">
+          <a href="index.html"> <img src="assets/sair.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/home.css">
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <div class="page">
+    <div method="POST" class="info">
+      <div class="userInfo">
+        <img src="assets/perfil.png" alt="">
+
+        <h1>Nome do Fornecedor</h1>
+
+      </div>
+
+      <div class="solicitacoes">
+        <div>
+          <input class="open-modal" type="submit" value="Segunda-Feira" />
+          <input class="open-modal" type="submit" value="Terça-Feira" />
+        </div>
+        <div>
+          <input class="open-modal" type="submit" value="Quarta-Feira" />
+          <input class="open-modal" type="submit" value="Quinta-Feira" />
+        </div>
+        <div>
+          <input class="open-modal" type="submit" value="Sexta-Feira" />
+          <input class="open-modal" type="submit" value="Sabado" />
+        </div>
+        <div class="specialBtn">
+          <input id="allSolicit" class="open-modal" type="submit" value="Todas as solicitações" />
+          <a href="verificar.html"><input class="open-modal" type="submit" value="Verificar"
+              style="background-color: #01CA94; color:#fff;" /></a>
+        </div>
+      </div>
+      <div class="help">
+        <img src="assets/help.png" alt="">
+        <a href="help.html" style="font-size: 18px; color: #003785 ; ">Fale conosco!</a>
+
+
+      </div>
+      <div class="exit">
+        <a href="index.html"> <img src="assets/sair.png" alt=""></a>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div id="fade" class="hide"></div>
+  <div id="modal" class="hide">
+    <div class="modal-header">
+      <h2>Solicitações do dia:</h2>
+      <button id="close-modal"><img src="assets/marca-cruzada.png" alt="" style="outline: none;"></button>
+    </div>
+    <div class="modal-body">
+      <div class="userInfo">
+
+        <table border="1">
+          <tr style="color: #fff;">
+            <th>Nome</th>
+            <th>ID</th>
+            <th>Pedidos</th>
+          </tr>
+          <tr>
+            <td>Danilo Agrizzi</td>
+            <td>71</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Sanderley Degasperi</td>
+            <td>81</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Vitor Pimentel</td>
+            <td>92</td>
+            <td>3</td>
+
+          </tr>
+          <tr>
+            <td>Homer Simpson</td>
+            <td>32</td>
+            <td>8</td>
+          </tr>
+
+          <tr>
+            <td>Elder Magnata Travezani</td>
+            <td>62</td>
+            <td>3</td>
+          </tr>
+          <tr>
+
+            <td>Maxwell Travezani Sepulcro</td>
+            <td>5</td>
+            <td>12</td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <dialog style="border: 0px;">
+    <div class="userSolicit">
+      <div class="topSolicit">
+        <button id="voltarButton" style="border: 0px; background-color: transparent; cursor: pointer;"><img
+            src="assets/voltar.png" alt="" onclick="closeModal2()"></button>
+
+        <h4>Número de solicitações</h4>
+
+
+      </div>
+      <div class="userInfo">
+
+        <table border="1">
+          <tr style="color: #fff;">
+            <th>Dia</th>
+            <th>Solicitações</th>
+          </tr>
+          <tr>
+            <td>Segunda-Feira</td>
+            <td>84</td>
+
+          </tr>
+          <tr>
+            <td>Terça-Feira</td>
+            <td>88</td>
+
+          </tr>
+          <tr>
+            <td>Quarta-Feira</td>
+            <td>73</td>
+
+
+          </tr>
+          <tr>
+            <td>Quinta-Feira</td>
+            <td>62</td>
+
+          </tr>
+
+          <tr>
+            <td>Sexta-Feira</td>
+            <td>54</td>
+
+          </tr>
+          <tr>
+
+            <td>Sábado</td>
+            <td>36</td>
+
+          </tr>
+
+          <tr>
+
+            <td>Total:</td>
+            <td>397</td>
+
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </dialog>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
