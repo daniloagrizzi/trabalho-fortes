@@ -44,9 +44,7 @@ function logar() {
   else if (email == "cliente@fortes.com.br") {
   location.href = "funcVerifc.html";
   }
-   else {
-    alert('Usuario ou senha incorretos');
-  };
+  
 
 };
 
