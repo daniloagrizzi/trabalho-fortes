@@ -41,7 +41,7 @@ function logar() {
   if (email == "fornecedor@fortes.com.br") {
     location.href = "home.html";
   }
-  if (email == "cliente@fortes.com.br") {
+  else if (email == "cliente@fortes.com.br") {
   location.href = "funcVerifc.html";
   }
    else {
