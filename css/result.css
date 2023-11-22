@@ -225,6 +225,7 @@ dialog {
         height: 40%;
         width: 100%;
     }
+    
 }
 
 @media (min-width: 304px) and (max-width: 930px) {

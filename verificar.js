@@ -19,3 +19,14 @@ document.querySelectorAll('.tabela table button').forEach(function(elemento) {
     })
     
 })
+
+ // Obter o valor armazenado em localStorage
+ const idValue = localStorage.getItem("idValue");
+
+ // Exibir o valor no elemento com id "idText"
+ document.getElementById("idText").innerHTML = idValue;
+
+ // Limpar o valor de localStorage (opcional, dependendo dos requisitos do seu aplicativo)
+ localStorage.removeItem("idValue");
+   
+

@@ -1,46 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verificar</title>
-  <link rel="stylesheet" href="css/verificar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar</title>
+    <link rel="stylesheet" href="css/verificar.css">
 </head>
-
 <body>
-  <div class="page">
 
-    <div class="verificarContent">
+  <div class="main-content">
+<div class="content">
+<div class="top-content">
 
-      <div class="topInfo">
-        <button onclick="window.history.back()" style="border: 0px; background-color: transparent; cursor: pointer;">
-          <img src="assets/voltar.png" alt=""></button>
-        <img  id="logo" src="assets/FORTES_LOGOMARCA_moldura-e1660776738611 1.png" alt="">
-      </div>
+  <button onclick="window.history.back()" style="border: 0px; background-color: transparent; cursor: pointer;"> <img src="assets/voltar.png" alt="" ></button>
+  <img src="assets/FORTES_LOGOMARCA_moldura-e1660776738611 1.png" alt="">
 
-      <div class="idInput">
+</div>
 
-        <label for="id" style="color: #003785; font-size: 20px;">Inserir ID:</label>
+<div class="inserirId">
 
-        <input type="text" id="id" placeholder="71">
+<label for="id">ID:</label>
+<input type="text" id="id">
+<button onclick="mudarID()">Verificar</button>
 
-        <a href="result.html"> <input id="verificador" class="open-modal" type="submit" value="Verificar" /> </a>
+</div>
+
+</div>
+
+<div class="help">
+  <img src="assets/help.png" alt="">
+       <a href="help.html" style="font-size: 18px; color: #003785 ; ">Fale conosco!</a>
+     </div>
+
+   <div class="exit">
+ <a href="index.html"> <img src="assets/sair.png" alt=""></a> 
+   </div>
+
+</div>
 
 
-      </div>
-      <div class="bottom">
-        <div class="help">
-          <img src="assets/help.png" alt="">
-          <a href="help.html" style="font-size: 18px; color: #003785 ; ">Fale conosco!</a>
-        </div>
 
-        <div class="exit">
-          <a href="index.html"> <img src="assets/sair.png" alt=""></a>
-        </div>
-      </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function mudarID() {
+        const idNumber = document.getElementById("id").value;
+        
+        // Armazenar o valor em localStorage para que ele possa ser acessado na próxima página
+        localStorage.setItem("idValue", idNumber);
+
+       
+        window.location.href = "result.html";
+    }
+</script>
+
+</body>
+</html>
 
 
 
